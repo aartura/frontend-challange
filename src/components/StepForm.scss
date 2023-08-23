@@ -1,0 +1,16 @@
+.step-form-wrapper {
+    margin-top: 10%;
+    min-width: 50%;
+}
+
+.result-content {
+    max-height: 50vh;
+    text-align: initial;
+    overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .step-form-wrapper {
+        min-width: 100%;
+    }
+  }
