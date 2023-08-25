@@ -19,15 +19,8 @@ import assetsCsv from "../data/assets.csv";
 import Papa from "papaparse";
 import { dataRequest, steps } from "../constants/constants";
 import "./StepForm.scss";
+import { AssetType, InfoType } from "../types/types";
 
-type InfoType = "populationDensity" | "droneRestriction";
-type AssetType = {
-  ID: string;
-  Latitude: number;
-  Longitude: number;
-  Name: string;
-  Type: string;
-};
 function StepForm() {
   const [activeStep, setActiveStep] = useState(0);
   const [assets, setAssets] = useState<AssetType[]>();
